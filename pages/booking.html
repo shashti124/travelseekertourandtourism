@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Travel Seeker Booking Form</title>
+  <link rel="stylesheet" href="./../css/booking.css"/>
 </head>
+
 <body>
+  
+  <div class="navbar">
+ <div >
+      <img src="./../images/tour-logo.jpg"  class="brand" width="65px" />
+      <span class="name">Travel Seeker</span>
+    </div>
     
+    <a href="/index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./booking.html">Booking</a>
+    <a href="./contact.html">Contact</a>
+    <a href="./destination.html">Destination</a>
+    <a href="./package.html">Package</a>
+    <a href="./services.html">Services</a>
+    <a href="./sign up.html">SignUp</a>
+    <a href="./login.html">Login</a>
+    
+  </div>
+  
+  <div>
+    <img src="./../images/booking-img.jpg" width="2050px" class="bottom"/>
+  </div>
+  <div class="form-container">
+    <h1>Travel Seeker Booking Form</h1>
+
+    <form>
+      <label for="fname">Full Name</label>
+      <input type="text" id="fname" placeholder="Full Name" required />
+
+      <label for="email">Email-ID</label>
+      <input type="email" id="email" placeholder="Enter Your Email-ID" required />
+
+      <label for="mob">Mobile Number</label>
+      <input type="tel" id="mob" placeholder="+91 9876543210" required />
+
+      <label for="destination">Destination</label>
+      <select id="destination" required>
+        <option value="">Please Select</option>
+        <option>Goa</option>
+        <option>Manali</option>
+        <option>Jaipur</option>
+        <option>Varanasi</option>
+      </select>
+
+      <label for="guests">Number of Travelers</label>
+      <input type="number" id="guests" placeholder="E.g., 2" min="1" required />
+
+      <label>Travel Dates</label>
+      <input type="date" id="start-date" required />
+      <label>to</label>
+      <input type="date" id="end-date" required />
+
+      <label>Additional Services</label>
+      <input type="checkbox" id="guide"> Local Guide <br>
+      <input type="checkbox" id="meals"> Meals Included <br>
+      <input type="checkbox" id="transport"> Transport Facility <br>
+      <input type="checkbox" id="insurance"> Travel Insurance <br><br>
+
+      <!-- Payment Section -->
+      <div class="payment-box">
+        <h3>Payment Options</h3>
+
+        <label><input type="radio" name="payment" value="UPI" required> UPI (GPay / PhonePe / Paytm)</label>
+        <label><input type="radio" name="payment" value="Credit Card"> Credit Card</label>
+        <label><input type="radio" name="payment" value="Debit Card"> Debit Card</label>
+        <label><input type="radio" name="payment" value="Net Banking"> Net Banking</label>
+        <label><input type="radio" name="payment" value="Cash"> Cash on Arrival</label>
+      </div>
+
+      <div class="pay-box">
+        <h3>Make Payment</h3>
+
+        <form action="success.html">
+
+          <label>Choose Payment Option</label>
+          <select required>
+            <option value="">Select</option>
+            <option>UPI Payment</option>
+            <option>Credit Card</option>
+            <option>Debit Card</option>
+            <option>Net Banking</option>
+          </select>
+
+          <label>Enter Amount</label>
+          <input type="number" placeholder="₹ Amount" required>
+
+          <label>Enter UPI ID / Card Number</label>
+          <input type="text" placeholder="example@upi OR 1234-5678-0000-0000" required>
+
+          <button class="btn">Pay Now</button>
+
+        </form>
+      </div>
+      <label for="request">Special Requests</label>
+      <textarea id="request" placeholder="Any specific preferences..."></textarea>
+
+      <input type="submit" value="Book Tour" />
+    </form>
+  </div>
 </body>
+
 </html>
