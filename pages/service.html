@@ -1,11 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travel Seekers - your Journey, our passion</title>
+
+    <style>
+       
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+          
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background:rgb(180, 222, 238);
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+      
+        .container {
+            width: min(1200px, 94%);
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+       
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            background:white;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .hero h1 {
+            font-size: clamp(28px, 4vw, 42px);
+            margin-bottom: 16px;
+            color: #111827;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            color: #4b5563;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+         
+        }
+
+        .btn {
+            background: #FF6F00;
+            color: #efeaea;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            
+        }
+
+        .btn:hover {
+            background: #00B4D8;
+        }
+
+        .btn.alt {
+            background: #172132;
+        }
+
+        .btn.alt:hover {
+            background:#00B4D8;
+        }
+
+        
+        section {
+            background: WHITE;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #111827;
+            border-bottom: 2px solid #f3f4f6;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            color: BLACK;
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 12px;
+            background: #71aec8;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: #090b0b;
+        }
+
+        .card h3 {
+            margin-bottom: 8px;
+            color: #0d1212;
+        }
+
+        
+        .packages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .pkg {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #d3dbea;
+            transition: shadow 0.2s;
+        }
+
+        .pkg img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .pkg .info {
+            padding: 16px;
+        }
+
+        .pkg .info h3 {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .pkg .info p {
+            font-size: 0.9rem;
+            color: #181b1d;
+            margin-bottom: 12px;
+        }
+
+        .pkg .info .book {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background: #324074;
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .pkg .info .book:hover {
+            background: #00B4D8;
+            
+        }
+
+       
+        .reasons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 12px;
+        }
+
+        .reason {
+            background: #71aec8;;
+            color: BLACK;
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .test {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            background:#71aec8;;
+            padding: 16px;
+            border-radius: 10px;
+            color: black;
+            
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #7ac9d7;
+            color: rgb(17, 16, 16);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        
+
+        
+        .steps {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 200px;
+            background:#71aec8;;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            font-weight: 500;
+            border: 1px solid;
+        }
+
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: opacity 0.2s;
+        }
+
+        .gallery img:hover {
+            opacity: 0.9;
+        }
+
+       
+        .faq {
+            display: grid;
+            gap: 10px;
+        }
+
+        .faq .q {
+            padding: 16px;
+            background: #71aec8;;
+            border-radius: 8px;
+            border-left: 4px solid #0ea5a1;
+        }
+
+        
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        form input,
+        form textarea,
+        form select {
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #d1d5db;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        form textarea {
+            grid-column: 1 / 3;
+            height: 120px;
+            resize: vertical;
+        }
+
+        .full {
+            grid-column: 1 / 3;
+            background-color: #151c26;
+        }
+        footer {
+            text-align: center;
+            padding-top: 20px;
+            color: black;
+            font-size: 0.9rem;
+            border-top: 1px solid #e5e7eb;
+            margin-top: 40px;
+        }
+        footer p {
+            margin-bottom: 5px;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .cta {
+                justify-content: center;
+            }
+
+            form {
+                grid-template-columns: 1fr;
+            }
+
+            form textarea {
+                grid-column: auto;
+            }
+
+            .full {
+                grid-column: auto;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+
+        <header class="hero">
+            <h1> Travel Seekers -Photo showcase </h1>
+            <p>We design personalized travel experiences — from budget getaways to luxury escapes. Let us handle the
+                planning while you enjoy the trip.</p>
+            <div class="cta">
+                <a href="#packages" class="btn">Plan Your Trip</a>
+                <a href="#contact" class="btn alt">Get Quote</a>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>About Travel Seekers</h2>
+            <p>Travel Seekers is a passionate travel agency dedicated to curating unforgettable experiences. With years
+                of expertise and thousands of happy travelers, we focus on safe, affordable, and tailor-made trips for
+                every kind of traveler.</p>
+        </section>
+
+        <section id="services">
+            <h2>Services We Offer</h2>
+            <div class="services">
+                <div class="card">
+                    <h3>Domestic Tours</h3>
+                    <p>Hill stations, beaches, city tours, wildlife.</p>
+                </div>
+                <div class="card">
+                    <h3>International Tours</h3>
+                    <p>Asia, Europe, Middle East packages tailored to your needs.</p>
+                </div>
+                <div class="card">
+                    <h3>Hotel &amp; Resort Booking</h3>
+                    <p>Budget to luxury accommodations curated for comfort.</p>
+                </div>
+                <div class="card">
+                    <h3>Transport &amp; Cab Services</h3>
+                    <p>Airport pickups, drop-offs, and private transfers.</p>
+                </div>
+                <div class="card">
+                    <h3>Visa &amp; Documentation</h3>
+                    <p>End-to-end visa assistance and travel documentation help.</p>
+                </div>
+                <div class="card">
+                    <h3>Customized Packages</h3>
+                    <p>Honeymoon, solo, family, and adventure trips crafted for you.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="packages">
+            <h2>Featured Travel Packages</h2>
+            <div class="packages">
+                <div class="pkg">
+                    <img src="./Sunset.jpg" alt="Beach getaway">
+                    <div class="info">
+                        <h3>Sunset Beach Escape</h3>
+                        <p>3 days · From $199 · Beaches, relaxation, seaside dining.</p>
+                        <a class="book" href="#contact">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="pkg">
+                    <img src="./mountain.jpg" alt="Mountain trek">
+                    <div class="info">
+                        <h3>Mountain Adventure</h3>
+                        <p>5 days · From $349 · Trekking, campfire, guided tours.</p>
+                        <a class="book" href="#contact">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="pkg">
+                    <img src="./nature-2.jpg" alt="City lights">
+                    <div class="info">
+                        <h3>City Explorer</h3>
+                        <p>4 days · From $289 · Culture, food tours, nightlife.</p>
+                        <a class="book" href="#contact">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why">
+            <h2>Why Choose Us</h2>
+            <div class="reasons">
+                <div class="reason">24/7 Support</div>
+                <div class="reason">Certified Travel Experts</div>
+                <div class="reason">Best Price Guarantee</div>
+                <div class="reason">Hassle-free Booking</div>
+                <div class="reason">Safe &amp; Secure Trips</div>
+                <div class="reason">1000+ Happy Travelers</div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Customer Testimonials</h2>
+            <div class="testimonials">
+                <div class="test">
+                    <div class="avatar">AP</div>
+                    <div>
+                        <strong>Anna Patel</strong>
+                        <p>"Amazing service — our honeymoon was perfect. Everything was seamless!"</p>
+                    </div>
+                </div>
+
+                <div class="test">
+                    <div class="avatar">RK</div>
+                    <div>
+                        <strong>Rohit Kapoor</strong>
+                        <p>"Great guides and well-planned itinerary. Highly recommend Travel Seekers."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step"><strong>1.</strong> Tell us your travel plan</div>
+                <div class="step"><strong>2.</strong> We design a custom itinerary</div>
+                <div class="step"><strong>3.</strong> Confirm &amp; book</div>
+                <div class="step"><strong>4.</strong> Enjoy your trip</div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+                <img src="./nature-1.jpg" alt="Travel Photo 1">
+                <img src="./winter.jpg" alt="Travel Photo 2">
+                <img src="./bali.jpg" alt="Travel Photo 3">
+                <img src="./droneshoot.jpg" alt="Travel Photo 4">
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2>FAQs</h2>
+            <div class="faq">
+                <div class="q">
+                    <strong>Q:</strong> Do you offer flexible payment options? <br>
+                    <strong>A:</strong> Yes, we offer multiple payment options including EMIs with partner banks.
+                </div>
+                <div class="q">
+                    <strong>Q:</strong> Can I customize the itinerary? <br>
+                    <strong>A:</strong> Absolutely — all packages are fully customizable.
+                </div>
+                <div class="q">
+                    <strong>Q:</strong> Do you provide travel insurance? <br>
+                    <strong>A:</strong> Yes, we provide travel insurance options for most packages.
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id="social" style="text-align: center;">
+            <h2>Social Proof & Partners</h2>
+            <p>Google Reviews · Booking Partners · Industry Certifications</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Travel Seekers. All rights reserved.</p>
+            <p>Made with ❤ · 24/7 Support</p>
+        </footer>
+    </div>
 </body>
+
 </html>

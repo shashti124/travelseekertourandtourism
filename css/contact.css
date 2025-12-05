@@ -1,7 +1,8 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: rgb(180, 222, 238);
+    background-color:rgb(180,222,238);
+    
 }
 
 .navbar-main-container {
@@ -10,6 +11,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0  25px;
+    
 }
 
 .navbar-main-container:hover {
@@ -22,7 +27,6 @@ body {
 }
 
 .logo-container {
-
     color: #FFFFFF;
     font-size: 25px;
     font-weight: bold;
@@ -46,6 +50,7 @@ body {
     cursor: pointer;
     padding: 15px;
     font-size: 20px;
+
 }
 
 .auth-nav-links {
@@ -56,59 +61,12 @@ body {
     font-size: 20px;
 }
 
-.main-image {
-    margin-top: 20px;
-    width: 550px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-.main-image:hover {
-       border: 4px solid grey;
-
-}
-
-.main-content-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.main-heading {
-    font-size: 40px;
-    font-weight: bold;
-    font-style: italic;
-}
-
-.project-sub-heading {
-    font-size: 20px;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.btn-1 {
-    display: inline-block;
-    padding: 12px 22px;
-    background: #FF6F00;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 8px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.btn-1:hover {
-    background: #0077B6;
-}
-
-.signup {
+.sinup {
     color: #f8fbff;
     text-decoration: none;
         font-size: 20px;
+    
 }
-
 
 .login {
     color: #f8fbff;
@@ -122,13 +80,11 @@ body {
         font-size: 20px;
 }
 
-
 .home {
     color: #f8fbff;
     text-decoration: none;
         font-size: 20px;
 }
-
 
 .about {
     color: #f8fbff;
@@ -136,13 +92,11 @@ body {
         font-size: 20px;
 }
 
-
 .destination {
     color: #f8fbff;
     text-decoration: none;
         font-size: 20px;
 }
-
 
 .services {
     color: #f8fbff;
@@ -150,78 +104,62 @@ body {
         font-size: 20px;
 }
 
-
 .booking {
     color: #f8fbff;
     text-decoration: none;
-     font-size: 20px;
+        font-size: 20px;
 }
 
-.package {
-    color: #f8fbff;
-    text-decoration: none;
-   
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
-
-.travel {
-    display: flex;
-    font-size: 25px;
-    align-items: center;
-
-}
-
-.best {
-    font-size: 20px;
-    font: bold;
-    color: darkorchid;
-    justify-content: center;
-
+h1 {
+    color: #0a63a8;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .card {
-    background-color: wheat;
-    height: 410px;
-    width: 300px;
-    border: 1px solid grey;
-    margin: 5px;
-    border-radius: 5px;
-    padding: 0px;
-}
-
-.card:hover {
-    border: 3px solid black;
-}
-
-.package-container {
+    background: #FFFFFF;
+    padding: 18px;
+    border-radius: 16px;
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 18px;
+    align-items: flex-start;
+    border: 2px solid #0A63A8;
+    box-shadow: 8px 8px 20px #d1d1d1,-8px -8px 20px #FFFFFF;
 }
 
-.stars {
-    color: gold;
-    font-size: 18px;
-    margin-bottom: 10px;
+.icon {
+    width: 55px;
+    height: 55px;
 }
 
-.end {
-    display: block;
+.phone-number {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+}
+
+.small {
+    font-size: 14px;
+    color: #666;
+}
+
+a {
+    color: #0a63a8;
+    font-weight: 600;
+}
+
+.center {
     text-align: center;
-    padding: 10px;
-    background: #324074;
-    color: #fff;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.image {
-    height: 200px;
-    width: 300px;
-    border-radius: 5px;
-    
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer {
