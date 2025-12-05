@@ -105,75 +105,64 @@ body {
 
 .signup {
     color: #f8fbff;
+    text-decoration: none;
+        font-size: 20px;
 }
 
-.signup:hover {
-    border: 3px solid white;
-}
 
 .login {
     color: #f8fbff;
-}
-
-.login:hover {
-    border: 3px solid white;
+    text-decoration: none;
+        font-size: 20px;
 }
 
 .contact {
     color: #f8fbff;
+    text-decoration: none;
+        font-size: 20px;
 }
 
-.contact:hover {
-    border: 3px solid white;
-}
 
 .home {
     color: #f8fbff;
+    text-decoration: none;
+        font-size: 20px;
 }
 
-.home:hover {
-    border: 3px solid white;
-}
 
 .about {
     color: #f8fbff;
+    text-decoration: none;
+        font-size: 20px;
 }
 
-.about:hover {
-    border: 3px solid white;
-}
 
 .destination {
     color: #f8fbff;
+    text-decoration: none;
+        font-size: 20px;
 }
 
-.destination:hover {
-    border: 3px solid white;
-}
 
 .services {
     color: #f8fbff;
+    text-decoration: none;
+        font-size: 20px;
 }
 
-.services:hover {
-    border: 3px solid white;
-}
 
 .booking {
     color: #f8fbff;
-}
-
-.booking:hover {
-    border: 3px solid white;
+    text-decoration: none;
+     font-size: 20px;
 }
 
 .package {
     color: #f8fbff;
+    text-decoration: none;
+   
 }
 
-.package:hover {
-    border: 3px solid white;
-}
 
 .travel {
     display: flex;
@@ -191,12 +180,13 @@ body {
 }
 
 .card {
-    background-color: white;
+    background-color: wheat;
     height: 410px;
     width: 300px;
     border: 1px solid grey;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
+    padding: 0px;
 }
 
 .card:hover {
@@ -230,6 +220,8 @@ body {
 .image {
     height: 200px;
     width: 300px;
+    border-radius: 5px;
+    
 }
 
 .footer {
