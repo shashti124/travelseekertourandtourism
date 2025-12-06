@@ -42,9 +42,10 @@ body {
 }
 
 .heading {
-    font-size: 30px;
+    font-size: 35px;
     color: #FFFFFF;
     cursor: pointer;
+     font-family: "merriweather",serif;
 }
 
 .nav-links {
@@ -111,54 +112,63 @@ body {
     color: #f8fbff;
     font-size: 20px;
     text-decoration: none;
+     font-family: "merriweather",serif;
 }
 
 .login {
     color: #f8fbff;
     font-size: 20px;
     text-decoration: none;
+     font-family: "merriweather",serif;
 }
 
 .contact {
     color: #f8fbff;
     font-size: 20px;
     text-decoration: none;
+     font-family: "merriweather",serif;
 }
 
 .home {
     color: #f8fbff;
     font-size: 20px;
     text-decoration: none;
+     font-family: "merriweather",serif;
 }
 
 .about {
     color: #f8fbff;
     font-size: 20px;
     text-decoration: none;
+     font-family: "merriweather",serif;
 }
 
 .destination {
     color: #f8fbff;
     font-size: 20px;
     text-decoration: none;
+     font-family: "merriweather",serif;
 }
 
 .services {
     color: #f8fbff;
     font-size: 20px;
     text-decoration: none;
+     font-family: "merriweather",serif;
 }
 
 .booking {
     color: #f8fbff;
     font-size: 20px;
     text-decoration: none;
+     font-family: "merriweather",serif;
 }
 
 .package {
     color: #f8fbff;
     font-size: 20px;
     text-decoration: none;
+     font-family: "merriweather",serif;
 }
 
 
@@ -192,10 +202,12 @@ body {
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 8px;
+    font-family: "Playfair Display", serif;
 }
 
 .subtext {
-    font-size: 25px;
+    font-size: 30px;
+    font-family: "merriweather", serif;
 }
 
 .right-side {
@@ -215,6 +227,7 @@ body {
     width: 600px;
     max-width: 450px;
     height: 530px;
+   padding-right: 50px;
 }
 
 .signup-card:hover{
@@ -270,7 +283,7 @@ body {
     width: 150px;
     text-decoration: none;
     text-align: center;
-    margin-left: 60px;
+    margin-left: 100px;
     padding: 10px 100px 10px 100px;
 
 }
