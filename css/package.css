@@ -50,6 +50,15 @@
 
  }
 
+ .package{
+    color: white;
+    font-size: 20px;
+     display: flex;
+     gap: 30px;
+     cursor: pointer;
+     padding: 2px;
+ }
+
 
  .auth-nav-links {
      background-color: none;
@@ -57,6 +66,7 @@
      gap: 30px;
      cursor: pointer;
  }
+
 
  .signup {
      color: #f8fbff;
