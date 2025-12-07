@@ -74,6 +74,7 @@ body {
 
 .contact {
     color: #f8fbff;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -91,6 +92,7 @@ body {
 
 .destination {
     color: #f8fbff;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -235,6 +237,264 @@ body {
     font-size: 20px;
     color: #FF6F00;
     font-weight: bold;
+}
+.footer {
+    width: 100%;
+    background: #0077B6;
+    color: #ffffff;
+    padding: 40px 30px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: auto;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.footer-section {
+    width: 22%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.travel-logo {
+    border-radius: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.heading-top {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    gap: 2px;
+    cursor: pointer;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.social-logo {
+    border-radius: 50px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.footer-section p,
+.footer-section li {
+    font-size: 15px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer-section a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ffffff44;
+    margin-top: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+
+    body {
+        font-size: 15px;
+        width: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 30px 40px;
+    }
+
+    .navbar-main-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        position: relative;
+    }
+
+    .logo-container {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-links,
+    .auth-nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .nav-links a,
+    .auth-nav-links a {
+        font-size: 16px;
+        display: flex;
+    }
+
+    .quote {
+        font-size: 35px;
+
+    }
+
+    .login-card {
+        margin-right: 10px;
+        margin-bottom: 700px;
+
+    }
+
+    .footer {
+        padding: 30px 40px;
+        width: auto;
+
+    }
+
+    .footer-container {
+        display: block;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+
+        flex-direction: column;
+    }
+
+    .footer-container {
+        gap: 50px;
+        padding: 30px 40px;
+    }
+
+    .footer-bottom {
+        width: auto;
+        text-align: center;
+
+
+    }
+
+    .footer-section links {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    .about-container {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .about-text,
+    .about-img {
+        width: 100%;
+    }
+
+    .about-img img {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .staff-section {
+        padding: 30px 20px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .intro {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .staff-card {
+        padding: 20px;
+    }
+
+    .staff-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .staff-card h3 {
+        font-size: 18px;
+    }
+
+    .position {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
