@@ -2,6 +2,11 @@ body {
     margin: 0px;
     padding: 0px;
     background-color:rgb(180,222,238);
+    background-image: url(./../images/contact_img1.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
     
 }
 
@@ -61,8 +66,8 @@ body {
     font-size: 20px;
 }
 
-.sinup {
-    color: #f8fbff;
+.signup {
+     color: #f8fbff;
     text-decoration: none;
         font-size: 20px;
     
