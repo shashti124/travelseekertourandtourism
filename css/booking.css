@@ -38,6 +38,7 @@ body {
   font-size: 30px;
   color: #FFFFFF;
   cursor: pointer;
+  font-family: "Merriweather", serif;
 }
 
 .nav-links {
@@ -103,77 +104,102 @@ body {
 .signup {
   color: #f8fbff;
   text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
 }
 
 .login {
   color: #f8fbff;
   text-decoration: none;
-
+  font-family: "Merriweather", serif;
+  font-size: 20px;
 }
 
 .contact {
   color: #f8fbff;
   text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
 }
 
 .home {
   color: #f8fbff;
   text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
 }
 
 .about {
   color: #f8fbff;
   text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+
 }
 
 .destination {
   color: #f8fbff;
   text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+
 }
 
 .services {
   color: #f8fbff;
   text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+
 }
 
 .booking {
   color: #f8fbff;
   text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+
 }
-.packages{
-   color: #f8fbff;
+
+.packages {
+  color: #f8fbff;
   text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
 }
 
 
 .hero {
   height: 100%;
-  background: url('./../images/booking-page.jpg') no-repeat center/cover; 
+  background: url(./../images/booking-8.jpg) no-repeat center/cover;
   display: flex;
   align-items: center;
-  padding-bottom:300px;
+  padding-bottom: 300px;
   padding: 25px;
   padding-right: 50px;
 }
 
+
 /* LEFT CONTENT */
 .hero-left {
-  width: 50%;
+  width: 100%;
   color: rgb(251, 248, 248);
   padding-bottom: 600px;
   padding-left: 60px;
   padding-top: 320px;
+
 }
 
 .hero-left h1 {
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 55px;
+  font-weight: 600;
   margin-bottom: 20px;
+  font-family: "playfair display", serif;
 }
 
 .hero-left p {
   width: 80%;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   margin-bottom: 30px;
 }
@@ -214,7 +240,7 @@ body {
   width: 130px;
 }
 
-.col-1{
+.col-1 {
   padding-right: 20px;
 }
 
@@ -245,30 +271,342 @@ body {
 
 .book-btn {
   width: 100%;
-  padding: 20px 4px 20px 4px;  
+  padding: 20px 4px 20px 4px;
   border: none;
   display: flex;
   border-radius: 20px;
   background: #FF6F00;
   font-size: 16px;
   font-weight: 1000;
- align-items: center;
- justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: #fff;
   cursor: pointer;
   margin: 20px 0.5px 20px 0.5px;
-text-decoration: none;
+  text-decoration: none;
 }
 
 .book-btn:hover {
   background-color: #0077B6;
-  
+
 }
-  
-       @media only screen and (max-width: 600px) {
-    body {
-        background-color: #ffffff;
-        font-size: 15px;
+
+
+.footer {
+  width: 1565px;
+  background: #0077B6;
+  color: #ffffff;
+  padding: 40px 30px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: -1000px;
+  margin-top: 140px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1150px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  width: 22%;
+  margin-bottom: 20px;
+}
+
+.travel-logo {
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.heading-top {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  gap: 2px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-direction: column;
+}
+
+.social-logo {
+  border-radius: 50px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.footer-section h2,
+.footer-section h3 {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-section p,
+.footer-section li {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.footer-section a:hover {
+  color: #ffffff;
+}
+
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background: #ffffff44;
+  border: none;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0 15px 0;
+  font-size: 14px;
+  color: #fff;
+  padding-left: 40%;
+}
+
+@media screen and (max-width: 1024px) {
+
+  body {
+    font-size: 15px;
+    width: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 30px 40px;
+  }
+
+  .navbar-main-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    position: relative;
+  }
+
+  .logo-container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-links,
+  .auth-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .nav-links a,
+  .auth-nav-links a {
+    font-size: 16px;
+    display: flex;
+  }
+
+  /*HERO SECTION RESPONSIVE */
+
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .hero-left h1 {
+    font-size: 26px;
+    line-height: 32px;
+    display: flex;
+  }
+
+  .hero-left p {
+    font-size: 15px;
+
+  }
+
+  .learn-btn {
+    display: inline-block;
+    margin-top: 12px;
+  }
+
+  /* HERO RIGHT FORM RESPONSIVE */
+
+  .hero-form {
+    width: 100%;
+    padding-bottom: 450px;
+    margin-top: 1000px;
+    margin-right: 600px;
+    margin: 0 auto;
+    margin-bottom: 1200px;
+  }
+
+  .hero-form select,
+  .hero-form input {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .col-1,
+  .col {
+    width: 100%;
+  }
+
+  .payment-container {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .payment-option {
+    margin: 8px 0;
+    font-size: 15px;
+  }
+
+  .book-btn {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+  }
+}
+
+/* FOOTER RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* Footer sections width */
+  .footer-section {
+    width: 100%;
+  }
+
+  .heading-top {
+    justify-content: center;
+  }
+
+  .footer-heading {
+    font-size: 20px;
+  }
+
+  .links ul {
+    padding: 0;
+  }
+
+  .links ul li {
+    list-style: none;
+    margin: 8px 0;
+  }
+
+  .links ul li a {
+    font-size: 16px;
+  }
+
+  .contact p,
+  .contact a {
+    font-size: 15px;
+    text-align: center;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+
+    .footer-section.social {
+      text-align: center;
+      width: 100%;
     }
+
+    .social-icons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 16px;
+    }
+
+    .social-icons img {
+      height: 22px;
+      width: 22px;
+    }
+  }
+
+  .footer-line {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0 10px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-bottom p {
+    font-size: 15px;
+  }
 }
-   
