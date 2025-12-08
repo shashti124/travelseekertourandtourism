@@ -35,7 +35,7 @@ body {
 }
 
 .heading {
-  font-size: 35px;
+  font-size: 30px;
   color: #FFFFFF;
   cursor: pointer;
   font-family: "Merriweather", serif;
@@ -106,7 +106,6 @@ body {
   text-decoration: none;
   font-family: "Merriweather", serif;
   font-size: 20px;
-  font-size: 20px;
 }
 
 .login {
@@ -114,15 +113,12 @@ body {
   text-decoration: none;
   font-family: "Merriweather", serif;
   font-size: 20px;
-  font-size: 20px;
-
 }
 
 .contact {
   color: #f8fbff;
   text-decoration: none;
   font-family: "Merriweather", serif;
-  font-size: 20px;
   font-size: 20px;
 }
 
@@ -198,7 +194,6 @@ body {
   font-size: 55px;
   font-weight: 600;
   margin-bottom: 20px;
-
   font-family: "playfair display", serif;
 }
 
